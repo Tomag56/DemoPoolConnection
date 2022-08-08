@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+
+    <Resource
+            name="jdbc/pool_cnx_gestionavis"
+            type="javax.sql.DataSource"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+
+            url="jdbc:sqlserver://localhost:1433;databasename=AVIS_BDD"
+            username="avis_user"
+            password="pa$$word"
+
+            maxIdle="3"
+            maxTotal="10"
+            maxWaitMillis="15000"
+
+            removeAbandoned="true"
+            removeAbandonedTimeout="10"
+    />
+</Context>
